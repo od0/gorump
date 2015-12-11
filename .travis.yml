@@ -4,5 +4,5 @@ before_install:
 language: go
 script:
   - cd rumprun && git submodule update --init
-  - CC=cc ./build-rr.sh hw
-  - cd ~/rumprun/go && GOROOT_BOOTSTRAP=$(which gO) GOOS=netbsd GOARCH=amd64 ./make.bash
+  - CC=cc ./build-rr.sh hw 1> /dev/null
+  - cd ~/rumprun/go && GOROOT_BOOTSTRAP=$(which go) GOOS=netbsd GOARCH=amd64 ./make.bash
