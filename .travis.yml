@@ -1,5 +1,5 @@
 before_install:
-  #- sudo apt-get install 
+  - sudo apt-get install g++
   - git clone https://github.com/rumpkernel/rumprun
 language: go
 script:
