@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/deferpanic/gorump.svg)](https://travis-ci.org/deferpanic/gorump)
+
 # gorump
 go on rumprun
 

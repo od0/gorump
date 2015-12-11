@@ -1,0 +1,8 @@
+before_install:
+  #- sudo apt-get install 
+  - git clone https://github.com/rumpkernel/rumprun
+language: go
+script:
+  - cd rumprun && git submodule update --init
+  - CC=cc ./build-rr.sh hw
+  - cd ~/rumprun/go && GOROOT_BOOTSTRAP=$(which gO) GOOS=netbsd GOARCH=amd64 ./make.bash
